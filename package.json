@@ -1,6 +1,6 @@
 {
   "name": "megatron-fs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "repository": "https://github.com/narzantaria/megatron-fs.git",
   "author": "Nar Zantaria <narzantaria@gmail.com>",
