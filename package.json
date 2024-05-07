@@ -11,6 +11,8 @@
     "prettier": "npx prettier --write ."
   },
   "files": [
+    "dist",
+    "src",
     "index.ts"
   ],
   "dependencies": {

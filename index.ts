@@ -1,5 +1,5 @@
-import { IField } from "./types";
-import { read } from "./promises";
+import { IField } from "./src/types";
+import { read } from "./src/promises";
 
 const MODELS_FOLDER = `${process.cwd()}/models`;
 
