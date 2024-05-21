@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.rwi = exports.iwi = exports.replaceWithIndent = exports.insertWithIndent = exports.addIndents = exports.readSchema = void 0;
-const promises_1 = require("./promises");
-const MODELS_FOLDER = `${process.cwd()}/models`;
+const promises_1 = require("./src/promises");
+const UNIVERSAL_FOLDER = `${process.cwd()}/universal`;
 // Read universal schema
 async function readSchema(arg) {
     try {
-        const rawData = await (0, promises_1.read)(`${MODELS_FOLDER}/${arg}.json`, "utf8");
+        const rawData = await (0, promises_1.read)(`${UNIVERSAL_FOLDER}/${arg}.json`, "utf8");
         if (!rawData)
             return null;
         const data = JSON.parse(rawData);
