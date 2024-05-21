@@ -1,12 +1,12 @@
 import { IField } from "./src/types";
 import { read } from "./src/promises";
 
-const MODELS_FOLDER = `${process.cwd()}/models`;
+const UNIVERSAL_FOLDER = `${process.cwd()}/universal`;
 
 // Read universal schema
 export async function readSchema(arg: string): Promise<IField[] | null> {
   try {
-    const rawData = await read(`${MODELS_FOLDER}/${arg}.json`, "utf8");
+    const rawData = await read(`${UNIVERSAL_FOLDER}/${arg}.json`, "utf8");
     if (!rawData) return null;
     const data: IField[] = JSON.parse(rawData);
     return data;
