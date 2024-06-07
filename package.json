@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "fs-extra": "^11.2.0",
-    "util": "^0.12.5"
+    "promiseman": "^0.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.2.0",
