@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.rwi = exports.iwi = exports.smartClean = exports.smartCopy = exports.stringBetweenStrings = exports.replaceWithIndent = exports.insertWithIndent = exports.addIndents = void 0;
+exports.rwi = exports.iwi = exports.smartClean = exports.smartCopy = exports.implosion = exports.stringBetweenStrings = exports.replaceWithIndent = exports.insertWithIndent = exports.addIndents = void 0;
 const path_1 = __importDefault(require("path"));
 const promiseman_1 = require("promiseman");
 function repeatStr(str, length) {
@@ -50,6 +50,13 @@ function stringBetweenStrings(startStr, endStr, str) {
     return str.substring(pos, str.indexOf(endStr, pos));
 }
 exports.stringBetweenStrings = stringBetweenStrings;
+// Remove the lines containing "str" and spaces(indents).
+function implosion(txt, str) {
+    const lines = txt.split('\n');
+    const filteredLines = lines.filter(line => !line.trim().startsWith(str) || line.trim().replace(str, '').trim().length > 0);
+    return filteredLines.join('\n');
+}
+exports.implosion = implosion;
 /**
  * Копирует исходники из папки template/main в папку проекта (release),
  * однако не трогает определенные файлы и папки

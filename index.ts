@@ -119,6 +119,13 @@ export function stringBetweenStrings(
   return str.substring(pos, str.indexOf(endStr, pos));
 }
 
+// Remove the lines containing "str" and spaces(indents).
+export function implosion(txt: string, str: string): string {
+  const lines = txt.split('\n');
+  const filteredLines = lines.filter(line => !line.trim().startsWith(str) || line.trim().replace(str, '').trim().length > 0);
+  return filteredLines.join('\n');
+}
+
 /**
  * Копирует исходники из папки template/main в папку проекта (release),
  * однако не трогает определенные файлы и папки
