@@ -14,6 +14,7 @@ export type TType =
   | "phonex"
   | "email"
   | "select"
+  | "selecticon"
   | "radio"
   | "img"
   | "gallery"
@@ -24,6 +25,7 @@ export type TType =
   | "switch"
   | "date"
   | "vendor"
+  | "coords"
   | "complex"
   | "multiselect"
   | "relation";
