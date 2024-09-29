@@ -18,6 +18,7 @@ export type TType =
   | "radio"
   | "img"
   | "gallery"
+  | "audio"
   | "video"
   | "checkbox"
   | "tags"
