@@ -26,6 +26,7 @@ export type TType =
   | "switch"
   | "date"
   | "vendor"
+  | "interval"
   | "coords"
   | "complex"
   | "multiselect"

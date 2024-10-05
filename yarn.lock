@@ -996,10 +996,10 @@ prettier@^3.2.5:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.3.1.tgz#e68935518dd90bb7ec4821ba970e68f8de16e1ac"
   integrity sha512-7CAwy5dRsxs8PHXT3twixW9/OEll8MLE0VRPCJyl7CkS6VHGPSlsVaWTiASPTyGyYRyApxlaWTzwUxVNrhcwDg==
 
-promiseman@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/promiseman/-/promiseman-0.0.1.tgz#306bb6fc80618800a4ab8f2f906734fa44ce2bf3"
-  integrity sha512-WV+AjyWLa3amqAsqksIj57xAMPQQetZyeG2mX9xScySqqtpAOpeZfBJWIjMRTtCvS66tMQj9/C5EOe+VGUfD3g==
+promiseman@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/promiseman/-/promiseman-0.0.2.tgz#7cefb0b7d4131c7b9ae7b46a28a0f30ae37a0adc"
+  integrity sha512-uG8M0z32B46G01thS200ccUPXqgfuHkj1JonH5q4MJelj2OME4FO7s1ufB98uVi+jEshB/0kg/KtliSA5yyNXQ==
   dependencies:
     fs-extra "^11.2.0"
     util "^0.12.5"
